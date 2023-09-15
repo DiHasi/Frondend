@@ -26,11 +26,12 @@
 
         .rows{
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             gap: 10px;
         }
         .rows__cell{
             width: calc((100% - 20px) / 3);
+            box-sizing: border-box;
         }
 
         .item{
@@ -49,11 +50,10 @@
             margin-bottom: 20px;
         }
         .item__mark{
-            width: 100%;
             padding: 25px;
             border-radius: 90px;
             background-color: blueviolet;
-            box-sizing: border-box;
+
         }
     </style>
 </head>
@@ -68,6 +68,12 @@
             </div>
 
             
+            <div class="item rows__cell">
+                <img class="item__thumb" src="https://placekitten.com/200/500" alt="">
+                <p class="item__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugiat beatae ipsam! Ipsum soluta odit sint enim, provident asperiores. Qui recusandae mollitia officiis nobis, provident quo illo corporis ipsam nisi.</p>
+                <div class="item__mark"></div>
+            </div>
+
             <div class="item rows__cell">
                 <img class="item__thumb" src="https://placekitten.com/200/500" alt="">
                 <p class="item__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugiat beatae ipsam! Ipsum soluta odit sint enim, provident asperiores. Qui recusandae mollitia officiis nobis, provident quo illo corporis ipsam nisi.</p>
