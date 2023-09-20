@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 14</title>
     <style>
-        .container{
+        .container {
             max-width: 900px;
             width: 100%;
             margin: 0 auto;
             padding-right: 6px;
             padding-left: 6px;
         }
-        .grid{
+
+        .grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 32px;
         }
-        .grid__item{
+
+        .grid__item {
             background-color: cadetblue;
             font-size: 18px;
             padding: 50px;
         }
+
+        .grid__item--1 {
+            grid-row: 4;
+            grid-column: 3;
+        }
+
+        .grid__item--12 {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .grid__item--9 {
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .grid__item--5 {
+            grid-column: 2/4;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="grid">
@@ -66,4 +90,5 @@
         </div>
     </div>
 </body>
+
 </html>
