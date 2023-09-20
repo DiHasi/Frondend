@@ -15,7 +15,7 @@ html{
 }
 img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .container{
@@ -38,11 +38,14 @@ img {
 .block{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 .col-1 {
     background-color: #e6e6e6;
     border: 1px solid red;
     padding: 4px;
+    flex: none;
+    width: 300px;
 }
 .col-2 {
     background-color: #d5d5d5;
