@@ -119,14 +119,14 @@ body {
     padding: 10px;
 }
 
-.product__advertisement-header {
+.product__header {
     font-size: 16px;
     font-weight: 700;
     color: red;
     margin-bottom: 12px;
 }
 
-.product p {
+.product__text {
     color: #4d4d4d;
     font-size: 14px;
     line-height: 20px;
@@ -136,7 +136,7 @@ body {
     background: #607D8B;
 }
 
-.footer div {
+.footer__container {
     padding: 20px;
 }
 
