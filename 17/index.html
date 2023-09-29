@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 17</title>
     <style>
-        body{
+        body {
             font-family: sans-serif;
         }
 
-        body, h1, h2{
+        body,
+        h1,
+        h2 {
             margin: 0;
         }
 
-        *, ::after, ::before {
+        *,
+        ::after,
+        ::before {
             box-sizing: border-box;
         }
 
-        .container{
+        .container {
             max-width: 900px;
             width: 100%;
             margin: 0 auto;
-            padding: 20px 0;
+            padding: 80px 0;
         }
 
-        .header{
+        .header {
             text-align: center;
+            position: fixed;
             background-color: cadetblue;
             padding: 10px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 4;
         }
 
 
-        .chars-block p{
+        .chars-block p {
             font-size: 20px;
             margin-bottom: 100px;
+            text-transform: capitalize;
         }
 
-        .chars-block__header{
+        .chars-block__header {
+            position: sticky;
+            top: 57px;
             padding: 10px;
             background-color: aquamarine;
+            z-index: 2;
         }
     </style>
 </head>
+
 <body>
 
     <header class="header">
@@ -82,4 +97,5 @@
 
     </div>
 </body>
+
 </html>
