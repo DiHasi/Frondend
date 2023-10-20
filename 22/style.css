@@ -32,10 +32,10 @@ body{
 }
 
 .breadcrumbs {
-    margin: 10px;
+    /* margin: 10px; */
 }
 
-.breadcrumbs-bar {
+.breadcrumbs__bar {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
@@ -50,7 +50,7 @@ body{
     padding: 0;
     margin: 0;
     display: inline-flex;
-    flex-direction: row;
+
     align-items: center;
 }
 
@@ -70,11 +70,11 @@ body{
     text-decoration: underline;
 }
 
-.breadcrumbs__item-separator {
+.breadcrumbs__separator {
     content: url(chevron-right.svg); 
 }
 
-li {
+/* li {
     display: flex;
     align-items: center;
-}
+} */
